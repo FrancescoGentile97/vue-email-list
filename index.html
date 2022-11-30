@@ -17,11 +17,12 @@
     <div id="app">
         <div class="container">
             <h1 class="text-center">Lista delle email</h1>
-            <div>
-                <ul>
+            <div class="list-group">
+                <div class="list-group-item">
                     <!-- in questo li eseguo il v-for e ciclo la lista delle email e poi la stampo con le {{}} -->
-                    <li></li>
-                </ul>
+                    <div v-for="(email, i) in listEmail" :key="i"></li>>{{email}} </div>
+                </div>
+
             </div>
         </div>
     </div>
