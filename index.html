@@ -19,8 +19,11 @@
             <h1 class="text-center">Lista delle email</h1>
             <div class="list-group">
                 <div class="list-group-item">
-                    <!-- in questo div(perchè con le li non mi funzionava) eseguo il v-for e ciclo la lista delle email e poi la stampo con le {{}} -->
-                    <div v-for="(email, i) in listEmail" :key="i">{{email}}</div>
+                    <ul>
+                        <!-- in questo div(perchè con le li non mi funzionava) eseguo il v-for e ciclo la lista delle email e poi la stampo con le {{}} -->
+                        <li v-for="(email, i) in listEmail" :key="i">{{email}}</li>
+                        <!-- fixati gli li completamente a caso riscrivendolo uguale a prima js sei mitico  -->
+                    </ul>
                 </div>
 
             </div>
